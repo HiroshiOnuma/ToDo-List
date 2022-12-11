@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "游ゴシック", "游ゴシック体", sans-serif;
+    margin: 0;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+main {
+    padding: 32px 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    padding: 0;
+    margin: 0 0 32px;
+}
+
+p {
+    margin: 0;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#input {
+    width: 100%;
+    max-width: 600px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #6500fc;
+}
+
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+#container.show {
+    border: 1px solid #6500fc;
+    background-color: #fc6500;
+    transition: 0.5s;
+}
+
+#container .hide-txt {
+    display: none;
+}
+
+#container.show#container .hide-txt {
+    display: block;
+    margin-bottom: 24px;
+}
+
+#container .hide-txt p {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+#container .hide-txt p:first-child {
+    margin-bottom: 8px;
+}
+
+#container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#container ul li {
+    font-size: 18px;
+    border: 1px solid #6500fc;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#container ul li.textdecoration-linethrough {
+    text-decoration: line-through 2px #6500fc;
+}
+
+#container ul li:not(#container ul li:last-of-type) {
+    margin-bottom: 16px;
+}
